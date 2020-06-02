@@ -1,4 +1,10 @@
+.Layout {
+    display: flex;
+    position: relative;
+}
+
 .test {
-    margin-top: 100px;
-    color: red;
+    flex: 1;
+    background-color: green;
+    height: 100vh;
 }

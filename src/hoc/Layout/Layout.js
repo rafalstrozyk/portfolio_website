@@ -2,18 +2,16 @@ import React from 'react';
 
 import Aux from '../Auxing/Auxing';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
-import styles from './Layout.css';
+import classes from './Layout.css';
 
 const layout = (props) => {
-
-    return (
-        <Aux >
-            <Toolbar />
-            <main className={'test'}>
-                <h1 >Main</h1>
-            </main>
-        </Aux>
-    );
-} 
-
+	return (
+		<div className={classes.Layout}>
+			<Toolbar  />
+			<main className={classes.test}>
+				<h1>Main lol</h1>
+			</main>
+		</div>
+	);
+};
 export default layout;

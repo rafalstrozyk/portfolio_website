@@ -1,0 +1,8 @@
+.Toolbar {
+ height: 100vh;
+ flex: 0 0 10%;
+ background-color: red; 
+ flex-direction: column;
+ justify-content: space-between;
+ 
+}
