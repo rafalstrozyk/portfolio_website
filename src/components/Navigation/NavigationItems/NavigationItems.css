@@ -1,3 +1,39 @@
-.Logo {
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+    height: 30rem;
+    
+}
 
+.logo {
+    fill: #fff;
+    width: 2rem;
+    height: 100%;
+}
+
+.Toolbar:hover .navigation .logo {
+    margin-right: 1rem;
+}
+
+span {
+    animation: hovered .3s linear;
+}
+
+@keyframes hovered {
+    0% {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(20%);
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }

@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import NavigationItems from '../NavigationItems/NavigationItems';
-import classes from './Toolbar.css'
+import './Toolbar.css';
 
-const toolbar = (props) => (
-	<div className={classes.Toolbar}>
-		<div>Logo</div>
-		<nav>
-            <NavigationItems />
-        </nav>
-	</div>
-);
+const Toolbar = (props) => {
 
-export default toolbar;
+	const [isHover, setIsHover] = useState(true);
+
+	return (
+		<div
+			className={'Toolbar'}
+			onMouseEnter={() => setIsHover(false)}
+			onMouseLeave={() => setIsHover(true)}
+		>
+			<nav>
+				<NavigationItems isHover={isHover} />
+			</nav>
+		</div>
+	);
+};
+
+export default Toolbar;

@@ -79,15 +79,15 @@ module.exports = function(webpackEnv) {
           ? { publicPath: '../../' }
           : {},
       },
-      {
-        loader: require.resolve('css-loader'),
-        options: {
-          importLoaders: 1,
-          modules: {
-              localIdentName: '[name]__[local]__[hash:base64:5]'
-          }
-      }
-      },
+      // {
+      //   loader: require.resolve('css-loader'),
+      //   options: {
+      //     importLoaders: 1,
+      //     modules: {
+      //         localIdentName: '[name]__[local]__[hash:base64:5]'
+      //     }
+      // }
+      // },
       {
         // Options for PostCSS as we reference these options twice
         // Adds vendor prefixing based on your specified browser support in

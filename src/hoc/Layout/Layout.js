@@ -1,15 +1,14 @@
 import React from 'react';
 
-import Aux from '../Auxing/Auxing';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
-import classes from './Layout.css';
+import './Layout.css';
 
 const layout = (props) => {
 	return (
-		<div className={classes.Layout}>
+		<div className={'Layout'}>
 			<Toolbar  />
-			<main className={classes.test}>
-				<h1>Main lol</h1>
+			<main className={'test'}>
+				{props.children}
 			</main>
 		</div>
 	);
