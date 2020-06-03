@@ -12,13 +12,11 @@
     fill: #fff;
     width: 2rem;
     height: 100%;
-}
-
-.Toolbar:hover .navigation .logo {
     margin-right: 1rem;
 }
 
-span {
+
+/* span {
     animation: hovered .3s linear;
 }
 
@@ -36,4 +34,4 @@ span {
         transform: translateX(0%);
         opacity: 1;
     }
-}
+} */

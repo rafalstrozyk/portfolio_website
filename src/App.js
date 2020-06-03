@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import './App.css';
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 
 import Home from './containers/Home/Home';

@@ -1,22 +1,15 @@
 import React, { useState } from 'react';
 
 import NavigationItems from '../NavigationItems/NavigationItems';
-import './Toolbar.css';
+import { StyledToolbar } from './Toolbar.style';
 
 const Toolbar = (props) => {
-
-	const [isHover, setIsHover] = useState(true);
-
 	return (
-		<div
-			className={'Toolbar'}
-			onMouseEnter={() => setIsHover(false)}
-			onMouseLeave={() => setIsHover(true)}
-		>
+		<StyledToolbar open={props.open}>
 			<nav>
-				<NavigationItems isHover={isHover} />
+				<NavigationItems />
 			</nav>
-		</div>
+		</StyledToolbar>
 	);
 };
 

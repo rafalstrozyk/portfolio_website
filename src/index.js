@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import {GlobalStyle} from './index.style'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 
 const app = (
   <BrowserRouter>
+    <GlobalStyle/>
     <App/>
   </BrowserRouter>
 );

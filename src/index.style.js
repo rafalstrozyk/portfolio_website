@@ -1,3 +1,7 @@
+import {createGlobalStyle} from 'styled-components'
+
+
+export const GlobalStyle = createGlobalStyle`
 *,
 *::after,
 *::before {
@@ -16,3 +20,4 @@ body {
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
 }
+`

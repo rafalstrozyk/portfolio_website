@@ -8,14 +8,34 @@ import './NavigationItems.css';
 import NavigationItem from './NavigationItem/NavigationItem';
 
 const NavigationItems = (props) => {
-	let navigationItemList = (
+	// if (props.isHover) {
+	// 	navigationItemList = (
+	// 		<ul className={'navigation'}>
+	// 			<NavigationItem link='/' exact>
+	// 				<HomeLogo className={'logo'} />
+	// 			</NavigationItem>
+	// 			<NavigationItem link='/me'>
+	// 				<UserLogo className={'logo'} />
+	// 			</NavigationItem>
+	// 			<NavigationItem link='/skills'>
+	// 				<CogLogo className={'logo'} />
+	// 			</NavigationItem>
+	// 			<NavigationItem link='/projects'>
+	// 				<FolderLogo className={'logo'} />
+	// 			</NavigationItem>
+	// 		</ul>
+	// 	);
+	// }
+
+	return (
 		<ul className={'navigation'}>
 			<NavigationItem link='/' exact>
 				<HomeLogo className={'logo'} />
 				<span>Home</span>
 			</NavigationItem>
 			<NavigationItem link='/me'>
-				<UserLogo className={'logo'} /><span>O mnie</span>
+				<UserLogo className={'logo'} />
+				<span>O mnie</span>
 			</NavigationItem>
 			<NavigationItem link='/skills'>
 				<CogLogo className={'logo'} />
@@ -27,27 +47,6 @@ const NavigationItems = (props) => {
 			</NavigationItem>
 		</ul>
 	);
-
-	if (props.isHover) {
-		navigationItemList = (
-			<ul className={'navigation'}>
-				<NavigationItem link='/' exact>
-					<HomeLogo className={'logo'} />
-				</NavigationItem>
-				<NavigationItem link='/me'>
-					<UserLogo className={'logo'} />
-				</NavigationItem>
-				<NavigationItem link='/skills'>
-					<CogLogo className={'logo'} />
-				</NavigationItem>
-				<NavigationItem link='/projects'>
-					<FolderLogo className={'logo'} />
-				</NavigationItem>
-			</ul>
-		);
-	}
-
-	return <div>{navigationItemList}</div>;
 };
 
 export default NavigationItems;

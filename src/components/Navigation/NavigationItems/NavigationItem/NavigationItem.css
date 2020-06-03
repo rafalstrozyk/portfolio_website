@@ -19,6 +19,7 @@
 .active {
     transform: scaleY(1);
     width: 100%;
+    
 }
 
 .link:link, 
@@ -39,4 +40,5 @@
 
 .active {
     background-color: #11999E;
+    transition: all .2s;
 }

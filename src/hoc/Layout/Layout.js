@@ -1,16 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
-import './Layout.css';
+import Burger from '../../components/Navigation/Burger/Burger';
+import {StyledLayout} from './Layout.style';
 
-const layout = (props) => {
+const Layout = (props) => {
+
+	const [open, setOpen] = useState(false);
+
 	return (
-		<div className={'Layout'}>
-			<Toolbar  />
+		<StyledLayout>
+			<Burger open={open} setOpen={setOpen}/>
+			<Toolbar open={open} setOpen={setOpen} />
 			<main className={'test'}>
 				{props.children}
 			</main>
-		</div>
+		</StyledLayout>
 	);
 };
-export default layout;
+export default Layout;
