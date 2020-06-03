@@ -2,12 +2,11 @@ import styled from 'styled-components';
 
 export const StyledToolbar = styled.div`
 	height: 100vh;
-	background-color: #333;
+	background-color: ${({theme}) => theme.greyDark};
 	flex-direction: column;
 	justify-content: center;
 	padding: 1rem;
 	display: flex;
-	transition: all 0.2s;
 	text-align: left;
 	position: absolute;
 	transform: ${({open}) => open? 'translateX(0)' : 'translateX(-100%)'};

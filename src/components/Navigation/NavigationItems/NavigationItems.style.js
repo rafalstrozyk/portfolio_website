@@ -10,7 +10,7 @@ export const StyledNavigationItems = styled.ul`
 `;
 
 export const StyledLogo = styled.svg`
-	fill: #fff;
+	fill: ${({theme}) => theme.greyLight};
 	width: 2rem;
 	height: 100%;
 	margin-right: 1rem;

@@ -19,5 +19,6 @@ body {
   font-weight: 300;
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
+  color: ${({theme}) => theme.greyLight_2};
 }
 `

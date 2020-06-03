@@ -1,15 +1,15 @@
-import React, {useState} from 'react';
-import './Burger.css'
+import React from 'react';
+import {StyledBurger} from './Burger.style';
 
 
 const Burger = (props) => {
     
     return (
-        <div className={'BurgerContener'} open={props.open} onClick={() => props.setOpen(!props.open)}>
-            <div className={'bar'}></div>
-            <div className={'bar'}></div>
-            <div className={'bar'}></div>
-        </div>
+        <StyledBurger  open={props.open} onClick={() => props.setOpen(!props.open)}>
+            <div></div>
+            <div></div>
+            <div></div>
+        </StyledBurger>
     )
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import NavigationItems from '../NavigationItems/NavigationItems';
 import { StyledToolbar } from './Toolbar.style';
