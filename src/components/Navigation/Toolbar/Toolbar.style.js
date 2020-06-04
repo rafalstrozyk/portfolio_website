@@ -8,7 +8,7 @@ export const StyledToolbar = styled.div`
 	padding: 1rem;
 	display: flex;
 	text-align: left;
-	position: absolute;
+	position: fixed;
 	transform: ${({open}) => open? 'translateX(0)' : 'translateX(-100%)'};
 	top: 0;
 	left: 0;

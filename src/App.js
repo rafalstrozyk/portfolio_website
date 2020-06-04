@@ -3,6 +3,7 @@ import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 
 import Home from './containers/Home/Home';
 import Layout from './hoc/Layout/Layout';
+import { AppStyled } from './App.style';
 
 const Me = React.lazy(() => {
 	return import('./containers/Me/Me');
@@ -16,7 +17,7 @@ const Projects = React.lazy(() => {
 
 const app = (props) => {
 	return (
-		<div className='App'>
+		<AppStyled>
 			<Layout>
 				<Suspense fallback={<p>Loading...</p>}>
 					<Switch>
@@ -28,7 +29,7 @@ const app = (props) => {
 					</Switch>
 				</Suspense>
 			</Layout>
-		</div>
+		</AppStyled>
 	);
 };
 

@@ -20,5 +20,8 @@ body {
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
   color: ${({theme}) => theme.greyLight_2};
+  //background: ${({theme}) => theme.secondaryBlue};
+  background: linear-gradient(${({theme}) => theme.secondaryBlueDark}, ${({theme}) => theme.secondaryBlue});
+  background-size: 800% 800%;
 }
 `

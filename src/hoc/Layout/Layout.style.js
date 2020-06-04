@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledLayout = styled.div`
 	display: flex;
 	position: relative;
-	height: 100vh;
+	width: 100%;
+    height: 100%;
 	justify-content: center;
-	background: ${({theme}) => theme.secondaryBlue};
 `;
