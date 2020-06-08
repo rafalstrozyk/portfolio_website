@@ -1,27 +1,26 @@
 import React from 'react';
 
-import Aux from '../../hoc/Auxing/Auxing';
 import Header from '../../components/Headers/Home/Header'; 
-import { Content } from './Home.style';
+import { Content, HomeStyle} from './Home.style';
 import ButtonLink from '../../components/Navigation/Button/Button';
-import {NavLink} from 'react-router-dom';
+
 
 
 const home = (props) => {
 	return (
-		<Aux>
+		<HomeStyle>
 			<Header />
 			<Content>
-				<h2>Cześć jestem Rafał. Miło mi Cię poznać</h2>
+				<h2>Cześć, jestem Rafał. Miło mi Cię poznać.</h2>
 				<p>Chcesz sie czegoś dowiedzieć o mnie?</p>
-				<NavLink to='/me'>Test</NavLink>
+				<ButtonLink link='/me'>O mnie</ButtonLink>
 				<p>Jeśli chcesz wiedzieć więcej o moich umiejętnościach to zapraszam</p>
-				<ButtonLink link='/skills'>Test2</ButtonLink>
+				<ButtonLink link='/skills'>Umiejętności</ButtonLink>
 				<p>Zachęcam Cię też do zobaczenia moich projektów</p>
-				<a href='/'>Coś</a>
+				<ButtonLink link='/projects'>Projekty</ButtonLink>
 
 			</Content>
-		</Aux>
+		</HomeStyle>
 	);
 };
 

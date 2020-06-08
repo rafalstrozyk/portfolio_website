@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const StyledLayout = styled.div`
 	display: flex;
@@ -7,3 +7,8 @@ export const StyledLayout = styled.div`
     height: 100%;
 	justify-content: center;
 `;
+
+export const NavigationStyle = styled.div `
+	z-index: 100;
+`
+
